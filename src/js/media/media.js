@@ -136,6 +136,13 @@ vjs.MediaTechController.prototype.onClick = function(event){
  * activity state, which hides and shows the controls.
  */
 vjs.MediaTechController.prototype.onTap = function(){
+  if (this.player().controls()) {
+    if (this.player().paused()) {
+      this.player().play();
+    } else {
+      this.player().pause();
+    }
+  }
   this.player().userActive(!this.player().userActive());
 };
 
