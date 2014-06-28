@@ -77,7 +77,6 @@ vjs.MediaTechController.prototype.addControlsListeners = function(){
   // activity
   this.on('touchstart', function(event) {
     // Stop the mouse events from also happening
-    event.preventDefault();
     userWasActive = this.player_.userActive();
   });
 

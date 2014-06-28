@@ -18,7 +18,6 @@ vjs.Button = vjs.Component.extend({
     var touchstart = false;
     this.on('touchstart', function(event) {
       // Stop click and other mouse events from triggering also
-      event.preventDefault();
       touchstart = true;
     });
     this.on('touchmove', function() {
